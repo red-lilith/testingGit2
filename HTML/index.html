@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diana García">
+    <meta name="description" content="Mi primera página">
+
+    <link href="ruta/a/imagen.png" rel="shortcut icon">
+    <title>MI PRIMERA PÁGINA</title>
+
+    <link href="estilos.css" rel="stylesheet">
+
+    <script src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<img>
+
+<h1 align="center">UN TÍTULO DE LA PÁGINA</h1>
+
+<p align="justify" class="parrafo">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged.<br>
+    It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+    Lorem Ipsum.
+</p>
+
+<div class="container" id="contenedor-animales">
+    <div class="card" align="center">
+        <img src="bbs1.jpg" class="imagen">
+        <h3>Un gatito</h3>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived
+        </p>
+    </div>
+</div>
+
+
+<input id="dato">
+
+
+
+<script>
+
+    let objeto = {
+        nombre: 'Diana',
+        direccion: 'Kra 123',
+        imagen: 'bbs1.jpg'
+
+    }
+
+    let valor = document.getElementById('dato').value
+
+    switch (valor) {
+        case 'nombre':
+            alert('Diana')
+            break;
+        case 'direccion':
+            alert('Kra 1111')
+            break;
+        case '4':
+            console.log('El kilogramo de platanos cuesta $0.48.');
+            break;
+        case '5':
+            console.log('El kilogramo de cerezas cuesta $3.00.');
+            break;
+        case 'Mangos':
+        case 'Papayas':
+            console.log('El kilogramo de mangos y papayas cuesta $2.79.');
+            break;
+        default:
+            console.log('Lo lamentamos, por el momento no disponemos de ' + expr + '.');
+    }
+
+    function crearCard(ruta_imagen, titulo, descripcion){
+        let padre = document.getElementById('contenedor-animales');
+
+        let card = document.createElement('div');
+        card.setAttribute('class', 'card');
+        card.setAttribute('align', 'center');
+
+        let imagen = document.createElement('img');
+        imagen.setAttribute('src', ruta_imagen);
+        imagen.setAttribute('class', 'imagen');
+
+        let titulo_ = document.createElement('h3');
+        titulo_.innerText = titulo;
+
+        let descripcion_ = document.createElement('p');
+        descripcion_.innerText = descripcion;
+
+        card.appendChild(imagen);
+        card.appendChild(titulo_);
+        card.appendChild(descripcion_);
+
+        padre.appendChild(card);
+    }
+</script>
+</body>
+</html>

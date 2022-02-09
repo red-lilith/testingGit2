@@ -1,0 +1,20 @@
+.parrafo {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #db7093;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    align-items: center;
+    padding: 0 10px;
+}
+
+.imagen {
+    width: 100%;
+}
+
