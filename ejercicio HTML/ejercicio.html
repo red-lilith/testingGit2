@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diana García">
+    <meta name="description" content="Mi primera página">
+    <meta name="keywords" content="">
+
+    <title>Mi Página | Formularios</title>
+
+    <link rel="shortcut icon" href="imagenes/cat.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.25/datatables.min.css"/>
+ 
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.25/datatables.min.js"></script>
+</head>
+
+<body>
+
+<select name="pais" id="paises" onchange="verificar()">
+ <option value="usa">USA</option>
+ <option value="colombia">Colombia</option>
+ <option value="mexico">México</option>
+</select>
+
+Resultado: <b id="resultado"></b>
+
+<script type="text/javascript">
+   let select = document.getElementById('paises');
+   let resultado = document.getElementById('resultado');
+
+   function verificar(){
+    let seleccionado = select.value;
+    if(seleccionado == "colombia"){
+        resultado.innerText = "Sí es Colombia";
+    }else{
+        resultado.innerText = "NO ES COLOMBIA";
+    }
+   }
+
+   function crearOpcion(){
+    let opcionNueva = document.createElement('option');
+    opcionNueva.innerText = "Londres";
+    opcionNueva.value = "londres";
+
+    select.appendChild(opcionNueva);
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: 'Staatliches', cursive;
+    background: #ffeaee
+}
+
+button {
+    font-family: 'Staatliches', cursive;
+}
+
+.boton_rosa {
+  background-color:  #eeaec2;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.boton_rosa:hover {
+    background-color: #DB7093;
+}
+.titulo-principal {
+    color: #eeaec2;
+    font-size: 50px;
+    text-align: center;
+}
+.barra-nav{
+    background-color: #eeaec2;
+    overflow: hidden;
+}
+.barra-nav a {
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px;
+    color: white;
+}
+.barra-nav a:hover {
+    background-color: #BB738D
+}
+.activo {
+    background-color: #9F4A6E
+}
+p {
+    font-family: 'Arial'
+}
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-imagen {
+    background: white;
+    flex: 0 0 23%;
+    border: 1px #4d4d4d solid;
+    border-radius: 4px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 5px;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+}
+
+.contenedor-imagen h4 {
+    margin-top: 0px;
+}
+
