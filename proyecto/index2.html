@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="author" content="Diana G">
+    <meta name="description" content="Una página xxxxxxx">
+    <meta charset="UTF-8">
+
+    <title>DIANA GARCIA</title>
+    <link href="imagenes/cat.png" rel="icon" type="image/x-icon">
+
+    <style type="text/css">
+        .botones {
+            cursor: pointer;
+            font-size: 9px;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<select class="selector">
+    <option value="EU">Estados Unidos</option>
+    <option value="CO">Colombia</option>
+    <option value="MX">Opción 3</option>
+    <option value="PE">Opción 4</option>
+</select>
+
+<input id="valor">
+
+<!--<br>-->
+
+<!--<p>-->
+<!--    Lorem <small>ipsum dolor</small> sit amet, <b><i>consectetur</i></b> <b>adipisicing</b> <i>elit</i>.-->
+<!--    Aspernatur consequatur dignissimos, dolore iure,-->
+<!--    modi nemo placeat quidem, quisquam recusandae velit veniam veritatis voluptatum? Dolores harum labore laborum quam-->
+<!--    quasi saepe!-->
+<!--</p>-->
+<!--<img src="" width="200" height="300" alt="Gato 1">-->
+<!--<p>-->
+<!--    Lorem <small>ipsum dolor</small> sit amet, <b><i>consectetur</i></b> <b>adipisicing</b> <i>elit</i>.-->
+<!--    Aspernatur consequatur dignissimos, dolore iure,-->
+<!--    modi nemo placeat quidem, quisquam recusandae velit veniam veritatis voluptatum? Dolores harum labore laborum quam-->
+<!--    quasi saepe!-->
+<!--</p>-->
+<!--<video width="320" height="240" autoplay controls>-->
+<!-- <source src="imagenes/video.mp4">-->
+<!--</video>-->
+
+<!--<audio controls>-->
+<!-- <source src="horse.mp3" type="audio/mpeg">-->
+<!-- <source src="horse.ogg" type="audio/ogg">-->
+<!--No soportado-->
+<!--</audio>-->
+
+<!--<form method="GET" action="usuarios.php">-->
+<!--    <label for="nombre">NOMBRE</label>-->
+<!--    <input type="text" value="" name="nombre" id="nombre"><br>-->
+<!--    <label>APELLIDO</label>-->
+<!--    <input type="text" name="apellido"><br>-->
+<!--    <label>FECHA</label>-->
+<!--    <input type="date" name=fecha"><br>-->
+<!--    <label for="edad">EDAD</label><br>-->
+<!--    <input type="number" name="edad" id="edad">-->
+<!--    <select>-->
+<!--        <option value="EU">Estados Unidos</option>-->
+<!--        <option value="CO">Colombia</option>-->
+<!--        <option value="MX">Opción 3</option>-->
+<!--        <option value="PE">Opción 4</option>-->
+<!--    </select>-->
+<!--    <input type="radio" id="male" name="gender" value="male">-->
+<!--    <label for="male">Male</label><br>-->
+<!--    <input type="radio" id="female" name="gender" value="female">-->
+<!--    <label for="female">Female</label><br>-->
+<!--    <input type="radio" id="other" name="gender" value="other">-->
+<!--    <label for="other">Other</label><br>-->
+<!--    <input type="radio" name="gender2" value="other"><br>-->
+<!--    <input type="password"><br>-->
+<!--    <input type="file"><br>-->
+<!--    <button class="botones" type="button" onclick="document.write('HOLA')">OTRO BOTÓN</button>-->
+<!--    <button class="botones" type="reset">RESET</button>-->
+<!--    <button class="botones" type="submit">ENVIAR</button>-->
+<!--</form>-->
+
+
+<ul id="listas">
+    <li id="li-1">Elemento lista 1</li>
+    <li id="li-2">Elemento lista 2</li>
+    <li id="li-3">Elemento lista 3</li>
+    <li id="li-4">Elemento lista 4</li>
+</ul>
+
+
+<script>
+    $("#listas li").each(function(){
+        alert(this.id);
+    });
+</script>
+
+<script src="scripts.js"></script>
+</body>
+</html>
